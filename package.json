@@ -1,5 +1,5 @@
 {
-    "name": "@exabyte-io/eslint-config",
+    "name": "@mat3ra/eslint-config",
     "version": "1.0.0",
     "description": "Eslint configuration extension to be reused across mat3ra projects.",
     "scripts": {
@@ -22,10 +22,9 @@
         "index.js",
         "eslint_config/base.js",
         "eslint_config/json.js",
-        ".babelrc",
         ".prettierrc"
     ],
-    "author": "Exabyte Inc.",
+    "author": "Exabyte Inc. (Mat3ra.com)",
     "bugs": {
         "url": "https://github.com/mat3ra/eslint-config/issues"
     },

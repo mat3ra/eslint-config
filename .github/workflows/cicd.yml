@@ -8,12 +8,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
-
 jobs:
-
   run-js-tests:
     runs-on: ubuntu-latest
-    if: github.repository != 'Exabyte-io/template-definitions'
+    if: github.repository != 'mat3ra/template-definitions'
     strategy:
       matrix:
         node-version:
@@ -38,7 +36,7 @@ jobs:
   publish-js-package:
     needs: [run-js-tests]
     runs-on: ubuntu-latest
-    if: (github.repository != 'Exabyte-io/template-definitions') && (github.ref_name == 'main')
+    if: (github.repository != 'mat3ra/template-definitions') && (github.ref_name == 'main')
 
     steps:
       - name: Checkout this repository
