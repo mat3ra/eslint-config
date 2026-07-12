@@ -1,4 +1,5 @@
 {
+    "root": true,
     "extends": ["airbnb", "prettier", "eslint:recommended"],
     "settings": {
         "import/resolver": {
@@ -9,6 +10,9 @@
         }
     },
     "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "requireConfigFile": false
+    },
     "env": {
         "browser": true,
         "node": true,
@@ -21,9 +25,9 @@
         "object-curly-spacing": "error",
         "no-trailing-spaces": "error",
         "array-element-newline": ["error", "consistent"],
-        "no-plusplus": ["error", { "allowForLoopAfterthoughts":  true }],
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
         "one-var": ["error", { "uninitialized": "always", "initialized": "never" }],
-        "brace-style": ["error", "1tbs", { "allowSingleLine":  true }],
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
         "prefer-template": "off",
         "camelcase": "off",
         "max-len": "off",
@@ -66,10 +70,7 @@
     },
     "overrides": [
         {
-            "files": [
-                "*.ts",
-                "*.tsx"
-            ],
+            "files": ["*.ts", "*.tsx"],
             "extends": [
                 "eslint:recommended",
                 "plugin:@typescript-eslint/eslint-recommended",
@@ -94,4 +95,3 @@
         }
     ]
 }
-

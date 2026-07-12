@@ -1,8 +1,4 @@
 {
     "all": true,
-    "include": [
-        "src/**/*.js",
-        "src/**/*.jsx"
-    ]
+    "include": ["src/**/*.js", "src/**/*.jsx"]
 }
-
